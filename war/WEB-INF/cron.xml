@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cronentries>
   <cron>
-    <url>/guestbook</url>
+    <url>/datafetcher</url>
     <description>Fetch latest route information every minute</description>
     <schedule>every 1 minutes</schedule>
   </cron>
