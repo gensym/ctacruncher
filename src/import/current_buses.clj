@@ -1,5 +1,6 @@
 (ns import.current-buses
 	(:require [appengine-clj.datastore :as ds])
+	(:require [appengine-clj.enhanced-datastore :as eds])
 	(:import 
 		(com.google.appengine.api.datastore Query)
 		(java.net URL)))
@@ -22,3 +23,6 @@
 			"http://www.ctabustracker.com/bustime/api/v1/getvehicles?key=kv6yHNkUrkZJkjA8u7V5sxNTq&rt=72,50")]
 		(store result)))
 
+
+(defn structure-fetched-data []
+	(:content (first (eds/find-one "TrackerQuery"))))

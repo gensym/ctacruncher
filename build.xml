@@ -47,6 +47,11 @@
       <sysproperty key="clojure.compile.path" value="${classes.dir}" />
       <arg value="api.datafetcher" />
     </java>
+    <java classname="clojure.lang.Compile" classpathref="project.classpath" failonerror="true">
+      <classpath path="${src.dir}" />
+      <sysproperty key="clojure.compile.path" value="${classes.dir}" />
+      <arg value="api.structure-fetched-data" />
+    </java>
   </target>
 
   <target name="runserver" depends="compile"

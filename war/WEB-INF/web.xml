@@ -8,9 +8,13 @@
         <servlet-name>datafetcher</servlet-name>
         <servlet-class>api.datafetcher</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>structure-fetched-data</servlet-name>
+        <servlet-class>api.structure_fetched_data</servlet-class>
+    </servlet>
     <servlet-mapping>
-        <servlet-name>datafetcher</servlet-name>
-        <url-pattern>/datafetcher</url-pattern>
+        <servlet-name>structure-fetched-data</servlet-name>
+        <url-pattern>/structure-fetched-data</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>/index.html</welcome-file>
