@@ -25,4 +25,7 @@
 
 
 (defn structure-fetched-data []
-	(:content (first (eds/find-one "TrackerQuery"))))
+	(let [xml (. (:content (first (eds/find-one "TrackerQuery"))) getValue )]
+		xml
+	))
+
